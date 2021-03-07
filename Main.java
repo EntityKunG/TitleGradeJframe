@@ -18,12 +18,10 @@ public class Main extends JFrame {
 	public static void main(String[] args) {
 		System.setProperty("sun.java2d.uiScale", "1"); //ปรับสเกลให้เท่ากับ 1
 		EventQueue.invokeLater(new Runnable() { 
-			
 			@Override
 			public void run() {
 				Main main = new Main(); //เรียกไฟล์ Main
 				main.setVisible(true); //ตั้งค่าเป็น visible เพื่อให้สะดวก
-				
 			}
 		});
 	}
@@ -40,9 +38,9 @@ public class Main extends JFrame {
 		JButton btnSum = new JButton("Sum"); //สร้างปุ่มในการประมวล
 		JLabel lblResult = new JLabel("Result"); //สร้างข้อความผลลัพท์
 		JLabel lblScore = new JLabel(); //สร้างข้อความคะแนน
-		
-    	lblResult.setBounds(27, 120, 350, 14); //ตั้งค่าตำแหน่ง [x: 27, y: 120] ขนาด [h: 350, w: 14]
-    	lblScore.setBounds(27, 140, 350, 14); //ตั้งค่าตำแหน่ง [x: 27, y: 140] ขนาด [h: 350, w: 14]
+
+		lblResult.setBounds(27, 120, 350, 14); //ตั้งค่าตำแหน่ง [x: 27, y: 120] ขนาด [h: 350, w: 14]
+		lblScore.setBounds(27, 140, 350, 14); //ตั้งค่าตำแหน่ง [x: 27, y: 140] ขนาด [h: 350, w: 14]
 		numA.setBounds(27, 26, 350, 20); //ตั้งค่าตำแหน่ง [x: 27, y: 26] ขนาด [h: 350, w: 20]
 		numB.setBounds(27, 56, 350, 20); //ตั้งค่าตำแหน่ง [x: 27, y: 56] ขนาด [h: 350, w: 20]
 		btnSum.setBounds(310, 90, 65, 23); //ตั้งค่าตำแหน่ง [x: 310, y: 90] ขนาด [h: 65, w: 23]
@@ -119,8 +117,8 @@ public class Main extends JFrame {
 		
 		getContentPane().add(btnSum); //เพิ่มลงในกล่อง
 		getContentPane().add(numA); //เพิ่มลงในกล่อง
-    	getContentPane().add(numB); //เพิ่มลงในกล่อง
-    	getContentPane().add(lblResult); //เพิ่มลงในกล่อง
-    	getContentPane().add(lblScore); //เพิ่มลงในกล่อง
-    }
+		getContentPane().add(numB); //เพิ่มลงในกล่อง
+		getContentPane().add(lblResult); //เพิ่มลงในกล่อง
+		getContentPane().add(lblScore); //เพิ่มลงในกล่อง
+	    }
 }
